@@ -90,3 +90,24 @@ footer {
         font-size: 14px;
     }
 }
+
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+    }
+    h2, h3 {
+        font-size: 18px;
+    }
+    .btn {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+    .car-card {
+        padding: 10px;
+    }
+    footer {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
