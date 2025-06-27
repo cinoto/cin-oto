@@ -28,3 +28,9 @@ footer {
     padding: 10px;
     background-color: #e6f0fa;
 }
+
+.logo {
+    width: 180px;
+    max-width: 90%;
+    margin-bottom: 10px;
+}
