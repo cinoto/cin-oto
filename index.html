@@ -2,317 +2,98 @@
 <!DOCTYPE html>
 <html lang="az">
 <head>
-    <link rel="icon" href="cin-oto-logo.ico" type="image/x-icon">
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title> - Çindən Maşın Sifarişi</title>
-<style>
-  body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin:0; padding:0; background:#f9fbfd; color:#222; }
-  header { background: linear-gradient(90deg, #004080, #007acc); color:#fff; padding:30px 20px; text-align:center; }
-  header h1 { margin:0; font-size:2.8em; letter-spacing: 2px; }
-  header p { margin-top: 8px; font-size:1.2em; font-weight: 300; }
-
-  nav { background:#007acc; display:flex; justify-content:center; flex-wrap: wrap; }
-  nav a {
-    color:#fff;
-    padding:15px 25px;
-    text-decoration:none;
-    font-weight:600;
-    transition: background 0.3s ease;
-  }
-  nav a:hover {
-    background:#005f99;
-  }
-
-  main {
-    max-width: 960px;
-    margin: 30px auto 50px auto;
-    padding: 0 15px;
-  }
-
-  h2 {
-    color: #004080;
-    border-bottom: 3px solid #007acc;
-    padding-bottom: 8px;
-    margin-bottom: 20px;
-  }
-
-  .car-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  .car-card {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    padding: 15px;
-    flex: 1 1 calc(33.333% - 20px);
-    box-sizing: border-box;
-    transition: transform 0.3s ease;
-    cursor: default;
-  }
-  .car-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-  }
-  .car-card img {
-    width: 100%;
-    border-radius: 6px;
-    margin-bottom: 12px;
-  }
-  .car-card h3 {
-    margin: 0 0 8px 0;
-    color: #007acc;
-  }
-  .car-card p {
-    font-weight: 500;
-    color: #555;
-  }
-
-  form {
-    background: #fff;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-  }
-  form label {
-    display: block;
-    margin: 15px 0 6px;
-    font-weight: 600;
-  }
-  form input, form textarea {
-    width: 100%;
-    padding: 10px 12px;
-    font-size: 1em;
-    border: 1.8px solid #ccc;
-    border-radius: 5px;
-    transition: border-color 0.3s ease;
-  }
-  form input:focus, form textarea:focus {
-    border-color: #007acc;
-    outline: none;
-  }
-  form textarea {
-    resize: vertical;
-    min-height: 80px;
-  }
-  form button {
-    margin-top: 20px;
-    background: #007acc;
-    color: white;
-    border: none;
-    padding: 14px 25px;
-    border-radius: 6px;
-    font-size: 1.1em;
-    font-weight: 700;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  form button:hover {
-    background: #005f99;
-  }
-
-  .logistics-link {
-    display: inline-block;
-    margin-top: 12px;
-    padding: 12px 22px;
-    background: #004080;
-    color: #fff;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background 0.3s ease;
-  }
-  .logistics-link:hover {
-    background: #002d5c;
-  }
-
-  .extra-services {
-    background: #fff;
-    padding: 25px;
-    margin-top: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-  }
-  .extra-services ul {
-    margin-top: 15px;
-    list-style: none;
-    padding-left: 0;
-  }
-  .extra-services li {
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #004080;
-  }
-
-  footer {
-    background: #004080;
-    color: white;
-    text-align: center;
-    padding: 20px 15px;
-    font-weight: 500;
-    letter-spacing: 1.2px;
-  }
-
-  @media (max-width: 900px) {
-    .car-card {
-      flex: 1 1 calc(50% - 20px);
+  <meta charset="UTF-8">
+  <title>Çindən Maşın Sifarişi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
     }
-  }
-  @media (max-width: 560px) {
-    nav {
-      flex-direction: column;
+    .container {
+      max-width: 500px;
+      background: #fff;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
       text-align: center;
+      color: #0077cc;
     }
-    nav a {
-      padding: 12px 0;
-      border-bottom: 1px solid #005f99;
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
     }
-    nav a:last-child {
-      border-bottom: none;
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
     }
-    .car-card {
-      flex: 1 1 100%;
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #0077cc;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
     }
-  }
-</style>
+    button:hover {
+      background-color: #005fa3;
+    }
+  </style>
 </head>
 <body>
-    <header style="text-align:center; padding:30px; background: linear-gradient(to right, #004080, #0073e6);">
-  <img src="cin-oto-logo.png" alt="Cin Oto Logo" style="max-height:180px; max-width:100%; margin-bottom:10px;">
-  <h1 style="color:white; font-size:26px; margin-top:10px;">Çindən Yeni və İkinci Əl Maşın Sifarişi</h1>
-</header>
+  <div class="container">
+    <h2>Sifariş Et</h2>
+    <form onsubmit="sendToWhatsApp(); return false;">
+      <label for="ad">Ad və Soyad:</label>
+      <input type="text" id="ad" required>
 
-<nav>
-  <a href="#new-cars">Yeni Avtomobillər</a>
-  <a href="#used-cars">İkinci Əl Avtomobillər</a>
-  <a href="#order">Sifariş Et</a>
-  <a href="#logistics">Loqistika İzləmə</a>
-  <a href="#logistics-services">Loqistika</a>
-  <a href="#contact">Əlaqə</a>
-</nav>
+      <label for="nomre">Əlaqə nömrəsi:</label>
+      <input type="text" id="nomre" required>
 
-<main>
+      <label for="model">Avtomobil modeli:</label>
+      <input type="text" id="model" required>
 
-<section id="new-cars">
-  <h2>Yeni Avtomobillər</h2>
-  <div class="car-list">
-    <div class="car-card">
-      <img src="https://via.placeholder.com/300x180?text=BYD+Tang" alt="BYD Tang" />
-      <h3>BYD Tang</h3>
-    </div>
-    <div class="car-card">
-      <img src="https://via.placeholder.com/300x180?text=Geely+Coolray" alt="Geely Coolray" />
-      <h3>Geely Coolray</h3>
-    </div>
-    <div class="car-card">
-      <img src="https://via.placeholder.com/300x180?text=Chery+Tiggo+8" alt="Chery Tiggo 8" />
-      <h3>Chery Tiggo 8</h3>
-    </div>
+      <label for="budce">Büdcə (AZN):</label>
+      <input type="number" id="budce" required>
+
+      <label for="qeyd">Əlavə qeydlər:</label>
+      <textarea id="qeyd" rows="4"></textarea>
+
+      <button type="submit">Sifarişi Göndər</button>
+    </form>
   </div>
-</section>
 
-<section id="used-cars" style="margin-top:40px;">
-  <h2>İkinci Əl Avtomobillər</h2>
-  <div class="car-list">
-    <div class="car-card">
-      <img src="https://via.placeholder.com/300x180?text=BYD+Used+Model" alt="BYD İkinci əl" />
-      <h3>BYD İkinci əl</h3>
-    </div>
-    <div class="car-card">
-      <img src="https://via.placeholder.com/300x180?text=Geely+Used+Model" alt="Geely İkinci əl" />
-      <h3>Geely İkinci əl</h3>
-    </div>
-  </div>
-</section>
+  <script>
+    function sendToWhatsApp() {
+      var ad = document.getElementById("ad").value;
+      var nomre = document.getElementById("nomre").value;
+      var model = document.getElementById("model").value;
+      var budce = document.getElementById("budce").value;
+      var qeyd = document.getElementById("qeyd").value;
 
-<section id="order" style="margin-top:40px;">
-  <h2>Sifariş Et</h2>
-  <form id="orderForm">
-    <label for="name">Ad və Soyad:</label>
-    <input type="text" id="name" name="name" required />
+      var mesaj = "*Yeni Sifariş*%0A" +
+                  "👤 Ad: " + ad + "%0A" +
+                  "📞 Əlaqə nömrəsi: " + nomre + "%0A" +
+                  "🚗 Maşın modeli: " + model + "%0A" +
+                  "💰 Büdcə: " + budce + " AZN%0A" +
+                  "📝 Qeyd: " + qeyd;
 
-    <label for="phone">Əlaqə nömrəsi:</label>
-    <input type="tel" id="phone" name="phone" required />
-
-    <label for="model">Avtomobil modeli:</label>
-    <input type="text" id="model" name="model" required />
-
-    <label for="budget">Büdcə (AZN):</label>
-    <input type="number" id="budget" name="budget" />
-
-    <label for="notes">Əlavə qeydlər:</label>
-    <textarea id="notes" name="notes" rows="4"></textarea>
-
-    <button type="submit">Sifarişi Göndər</button>
-  </form>
-</section>
-
-<section id="logistics" style="margin-top:40px;">
-  <h2>Loqistika İzləmə</h2>
-  <p>Sifarişinizi izləmək üçün aşağıdakı düyməyə klikləyin:</p>
-  <a href="https://stage-tracking.zillionsource.com/XJYHH" target="_blank" rel="noopener" class="logistics-link">İzləmə Sisteminə Keçid</a>
-</section>
-
-<section id="logistics-services" class="extra-services" style="margin-top:40px;">
-  <h2>Loqistika</h2>
-  <p><strong>Loqistika xidməti</strong></p>
-  <p>Çindən sifariş etdiyiniz avtomobilin daşınması və çatdırılması işini bizim vasitəmizlə həyata keçirə bilərsiniz. Bu xidmət ödənişlidir və bütün daşınma prosesini peşəkar komandamız izləyir.</p>
-  <ul>
-    <li>Daşınma zamanı əmin-amanlıq və vaxtında çatdırılma</li>
-    <li>Yükün tam təhlükəsizliyi və izləmə imkanı</li>
-    <li>Rəqabətli və şəffaf qiymətlər:</li>
-    <li><strong>SUV:</strong> 1900 USD</li>
-    <li><strong>Sedan:</strong> 1700 USD</li>
-  </ul>
-</section>
-
-
-<section id="contact" style="padding: 40px; text-align:center;">
-  <h2>Sifariş Et</h2>
-  <form onsubmit="sendToWhatsApp(); return false;">
-    <input type="text" id="ad" placeholder="Adınız" required><br><br>
-    <input type="text" id="mawin" placeholder="İstədiyiniz maşın" required><br><br>
-    <textarea id="qeyd" placeholder="Əlavə qeydlər" rows="4"></textarea><br><br>
-    <button type="submit">WhatsApp ilə Göndər</button>
-  </form>
-</section>
-
-<script>
-  function sendToWhatsApp() {
-    var ad = document.getElementById("ad").value;
-    var mawin = document.getElementById("mawin").value;
-    var qeyd = document.getElementById("qeyd").value;
-
-    var mesaj = "*Yeni Sifariş*
-" +
-                "👤 Ad: " + ad + "
-" +
-                "🚗 Maşın: " + mawin + "
-" +
-                "📝 Qeyd: " + qeyd;
-
-    var whatsappLink = "https://wa.me/994706540504?text=" + encodeURIComponent(mesaj);
-    window.open(whatsappLink, '_blank');
-  }
-</script>
-
-
-</main>
-
-<footer>
-  <p>© 2025 . Bütün hüquqlar qorunur.</p>
-</footer>
-
-<script>
-  // Sadə sifariş forması təsdiqləmə
-  document.getElementById('orderForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Sifariş qəbul edildi! Tezliklə sizinlə əlaqə saxlanılacaq.');
-    this.reset();
-  });
-</script>
-
+      var whatsappLink = "https://wa.me/994706540504?text=" + mesaj;
+      window.open(whatsappLink, '_blank');
+      alert("Sifariş qəbul edildi! Tezliklə sizinlə əlaqə saxlanılacaq.");
+    }
+  </script>
 </body>
 </html>
