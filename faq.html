@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tez-tez Verilən Suallar (FAQ) - Çin-Oto</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+
+
+<header style="background-color:#003366; padding: 15px 20px; color: white; display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto;">
+  <div style="display: flex; align-items: center; gap: 15px;">
+    <img src="cin-oto-logo.png" alt="Çin-Oto Logo" style="width: 120px; height: auto;">
+    <div style="font-weight: bold; font-size: 22px;">Çin-Oto<span style="font-weight: normal; font-size: 16px; margin-left: 5px;">Çindən birbaşa Azərbaycana</span></div>
+  </div>
+  <nav>
+    <ul style="list-style:none; display: flex; gap: 25px; margin: 0; padding: 0;">
+      <li><a href="index.html" style="color: white; text-decoration: none;">Ana səhifə</a></li>
+      <li><a href="cars.html" style="color: white; text-decoration: none;">Maşınlar</a></li>
+      <li><a href="logistics.html" style="color: white; text-decoration: none;">Logistika</a></li>
+      <li><a href="tracking.html" style="color: white; text-decoration: none;">Sifarişi izləyin</a></li>
+      <li><a href="faq.html" style="color: white; text-decoration: none;">FAQ</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+
+<section style="max-width: 800px; margin: 40px auto; font-family: Arial, sans-serif;">
+  <h1 style="text-align: center; margin-bottom: 30px;">Tez-tez Verilən Suallar (FAQ)</h1>
+
+  <div style="margin-bottom: 15px;">
+    <h3 style="cursor: pointer; background:#eee; padding:10px; border-radius:5px;">Çindən maşın sifarişi necə verilir?</h3>
+    <p style="display: none; margin-left: 15px; line-height: 1.5;">
+      Saytımızda istədiyiniz modeli seçib, sifariş formunu doldurun. Biz sizinlə əlaqə saxlayıb bütün mərhələlərdə kömək edəcəyik.
+    </p>
+  </div>
+
+  <div style="margin-bottom: 15px;">
+    <h3 style="cursor: pointer; background:#eee; padding:10px; border-radius:5px;">Daşıma qiymətləri necə hesablanır?</h3>
+    <p style="display: none; margin-left: 15px; line-height: 1.5;">
+      Qiymətlər avtomobil növü və daşınma marşrutuna görə dəyişir. Ətraflı məlumat logistika bölməsində mövcuddur.
+    </p>
+  </div>
+
+  <div style="margin-bottom: 15px;">
+    <h3 style="cursor: pointer; background:#eee; padding:10px; border-radius:5px;">Sifarişin çatdırılma müddəti nə qədərdir?</h3>
+    <p style="display: none; margin-left: 15px; line-height: 1.5;">
+      Adətən 2-4 həftə arasında olur, daşınma növündən asılıdır.
+    </p>
+  </div>
+
+  <div style="margin-bottom: 15px;">
+    <h3 style="cursor: pointer; background:#eee; padding:10px; border-radius:5px;">Zəmanət və servis xidməti varmı?</h3>
+    <p style="display: none; margin-left: 15px; line-height: 1.5;">
+      Biz yalnız satışdan sonra da xidmət göstəririk. Servis və zəmanət şərtləri modellərə görə dəyişir.
+    </p>
+  </div>
+
+  <div style="margin-bottom: 15px;">
+    <h3 style="cursor: pointer; background:#eee; padding:10px; border-radius:5px;">Ödəniş necə həyata keçirilir?</h3>
+    <p style="display: none; margin-left: 15px; line-height: 1.5;">
+      Ödənişlər müxtəlif üsullarla qəbul edilir: bank köçürməsi, onlayn ödəmə və s.
+    </p>
+  </div>
+</section>
+
+<script>
+  const faqs = document.querySelectorAll('section div h3');
+  faqs.forEach(faq => {
+    faq.addEventListener('click', () => {
+      const answer = faq.nextElementSibling;
+      if (answer.style.display === 'block') {
+        answer.style.display = 'none';
+      } else {
+        answer.style.display = 'block';
+      }
+    });
+  });
+</script>
+
+
+<a href="https://wa.me/994706540504" target="_blank" style="
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  z-index: 1000;
+">
+  &#x2709;
+</a>
+
+</body>
+</html>
