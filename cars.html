@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="az">
 <head>
@@ -10,7 +11,7 @@
 </head>
 <body>
     <header>
-        <img src="cin-oto-logo.png" alt="Çin-Oto Logo" style="width:100px;">
+        <img src="cin-oto-logo.png" alt="Çin-Oto Logo" class="logo">
         <h1>Çin-Oto</h1>
         <p>Çindən birbaşa Azərbaycana</p>
         <nav>
@@ -23,7 +24,26 @@
     </header>
     <main>
         <h2>Nümunə Maşınlar</h2>
-        <ul><li><a href='#'>Toyota Camry</a></li><li><a href='#'>Hyundai Sonata</a></li><li><a href='#'>Kia Bongo</a></li></ul><p>Maşınların qiymətləri göstərilmir.</p>
+        <div class="car-grid">
+            <div class="car-card">
+                <img src="images/camry.jpg" alt="Toyota Camry">
+                <h3>Toyota Camry</h3>
+                <a href="#" class="btn">Ətraflı bax</a>
+                <a href="https://wa.me/994706540504?text=Toyota%20Camry%20ilə%20maraqlanıram" class="btn" target="_blank">Sifariş et</a>
+            </div>
+            <div class="car-card">
+                <img src="images/sonata.jpg" alt="Hyundai Sonata">
+                <h3>Hyundai Sonata</h3>
+                <a href="#" class="btn">Ətraflı bax</a>
+                <a href="https://wa.me/994706540504?text=Hyundai%20Sonata%20ilə%20maraqlanıram" class="btn" target="_blank">Sifariş et</a>
+            </div>
+            <div class="car-card">
+                <img src="images/bongo.jpg" alt="Kia Bongo">
+                <h3>Kia Bongo</h3>
+                <a href="#" class="btn">Ətraflı bax</a>
+                <a href="https://wa.me/994706540504?text=Kia%20Bongo%20ilə%20maraqlanıram" class="btn" target="_blank">Sifariş et</a>
+            </div>
+        </div>
     </main>
     <footer>
         <p>&copy; 2025 Çin-Oto</p>
