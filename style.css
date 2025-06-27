@@ -192,3 +192,34 @@ nav ul li a {
   }
 }
 
+
+/* Mobil ekranlar üçün */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  nav {
+    display: block;
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .container {
+    padding: 5px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  header, footer {
+    text-align: center;
+  }
+}
