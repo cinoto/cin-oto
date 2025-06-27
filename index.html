@@ -268,12 +268,36 @@
   </ul>
 </section>
 
-<section id="contact" style="margin-top:40px;">
-  <h2>Əlaqə</h2>
-  <p>WhatsApp ilə əlaqə: <a href="https://wa.me/994706540504" target="_blank" rel="noopener">+994 70 654 05 04</a></p>
-  <p>Telefon: +994 70 654 05 04</p>
-  <p>E-poçt: info@.com</p>
+
+<section id="contact" style="padding: 40px; text-align:center;">
+  <h2>Sifariş Et</h2>
+  <form onsubmit="sendToWhatsApp(); return false;">
+    <input type="text" id="ad" placeholder="Adınız" required><br><br>
+    <input type="text" id="mawin" placeholder="İstədiyiniz maşın" required><br><br>
+    <textarea id="qeyd" placeholder="Əlavə qeydlər" rows="4"></textarea><br><br>
+    <button type="submit">WhatsApp ilə Göndər</button>
+  </form>
 </section>
+
+<script>
+  function sendToWhatsApp() {
+    var ad = document.getElementById("ad").value;
+    var mawin = document.getElementById("mawin").value;
+    var qeyd = document.getElementById("qeyd").value;
+
+    var mesaj = "*Yeni Sifariş*
+" +
+                "👤 Ad: " + ad + "
+" +
+                "🚗 Maşın: " + mawin + "
+" +
+                "📝 Qeyd: " + qeyd;
+
+    var whatsappLink = "https://wa.me/994706540504?text=" + encodeURIComponent(mesaj);
+    window.open(whatsappLink, '_blank');
+  }
+</script>
+
 
 </main>
 
