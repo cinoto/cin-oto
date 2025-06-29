@@ -4,26 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Çindən Azərbaycana avtomobil sifarişi – Çin-Oto">
-    <link rel="icon" type="image/x-icon" href="cin-oto-logo.ico">
-    <title>Çin-Oto</title>
+    <title>Maşınlar - Çin-Oto</title>
     <link rel="stylesheet" href="style.css">
-
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JHSJR3BT7Q"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JHSJR3BT7Q');
-</script>
-
+    <style>
+        .brand-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .brand {
+            position: relative;
+            background: #e3e3e3;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .models {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            z-index: 10;
+            min-width: 150px;
+        }
+        .models a {
+            display: block;
+            padding: 5px 10px;
+            color: #000;
+            text-decoration: none;
+        }
+        .models a:hover {
+            background-color: #f2f2f2;
+        }
+        .brand:hover .models {
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <header>
         <img class="logo logo-img" src="cin-oto-logo.png" alt="Çin-Oto Logo">
-       
         <p>Çindən birbaşa Azərbaycana</p>
         <nav>
             <a href="index.html">Ana səhifə</a>
@@ -33,52 +59,43 @@
             <a href="faq.html">FAQ</a>
         </nav>
     </header>
+
     <main>
-        <h2>Nümunə Maşınlar</h2>
-        <div class="car-grid">
-            <div class="car-card">
-                <img src="images/camry.jpg" alt="Toyota Camry">
-                <h3>Toyota Camry</h3>
-                <a href="#" class="btn">Ətraflı bax</a>
-                <a href="https://wa.me/994706540504?text=Toyota%20Camry%20ilə%20maraqlanıram" class="btn" target="_blank">Sifariş et</a>
+        <h2>Markanı Seçin</h2>
+        <div class="brand-list">
+            <div class="brand">BYD
+                <div class="models">
+                    <a href="models/byd-songplus.html">Song Plus</a>
+                    <a href="#">Atto 3</a>
+                </div>
             </div>
-            <div class="car-card">
-                <img src="images/sonata.jpg" alt="Hyundai Sonata">
-                <h3>Hyundai Sonata</h3>
-                <a href="#" class="btn">Ətraflı bax</a>
-                <a href="https://wa.me/994706540504?text=Hyundai%20Sonata%20ilə%20maraqlanıram" class="btn" target="_blank">Sifariş et</a>
+            <div class="brand">Changan
+                <div class="models">
+                    <a href="#">CS75 Plus</a>
+                    <a href="#">UNI-K</a>
+                </div>
             </div>
-            <div class="car-card">
-                <img src="images/bongo.jpg" alt="Kia Bongo">
-                <h3>Kia Bongo</h3>
-                <a href="#" class="btn">Ətraflı bax</a>
-                <a href="https://wa.me/994706540504?text=Kia%20Bongo%20ilə%20maraqlanıram" class="btn" target="_blank">Sifariş et</a>
+            <div class="brand">Chery
+                <div class="models">
+                    <a href="#">Tiggo 7</a>
+                    <a href="#">Arrizo 5</a>
+                </div>
+            </div>
+            <div class="brand">Hyundai
+                <div class="models">
+                    <a href="#">Sonata</a>
+                </div>
+            </div>
+            <div class="brand">Toyota
+                <div class="models">
+                    <a href="#">Camry</a>
+                </div>
             </div>
         </div>
     </main>
-   <footer>
-        <p>&copy; 2025 Bütün hüquqlar qorunur</p>
+
+    <footer>
+        <p>&copy; 2025 Çin-Oto</p>
     </footer>
-
-<a href="https://wa.me/994706540504" target="_blank" style="
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25D366;
-  color: white;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  font-size: 30px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-  z-index: 1000;
-">
-  &#x2709;
-</a>
-
 </body>
 </html>
